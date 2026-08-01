@@ -1,7 +1,24 @@
 aid: pawdly
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pawdly.png
 name: Pawdly
-description: Pawdly is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Pawdly (포들리) is a South Korean pet e-commerce marketplace and mobile app operated
+  by KCC I&C, offering pet product shopping across categories, saved/wishlist items, and pet-care
+  service reservations, alongside pet-care tips and member benefits delivered through its app. KCC
+  I&C operates as a payment intermediary and mail-order sales broker rather than the direct seller,
+  with individual merchants fulfilling orders, shipping, and refunds. Pawdly was surfaced as a
+  portfolio company of 500 Global and added to the API Evangelist network. An enrichment pass found
+  a consumer web/mobile marketplace with no public developer portal, API, or documentation surface.
 url: https://raw.githubusercontent.com/api-evangelist/pawdly/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Pets
+- E-commerce
+- Marketplace
+- Retail
+- Consumer
+- South Korea
+- Mobile App
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/pawdly-domain-security.yml
 - type: Website
   url: https://pawdly.com
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
